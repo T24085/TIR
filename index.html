@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trendel Lumber Co.</title>
+    <meta
+      name="description"
+      content="Trendel Lumber Co. - premium building materials, contractor support, and dependable delivery across Missouri and Kansas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="sr-only" aria-hidden="true" focusable="false">
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M12 22s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="12" cy="11" r="2.8" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="m12 3 2.8 5.7 6.2.9-4.5 4.3 1.1 6.1-5.6-3-5.6 3 1.1-6.1-4.5-4.3 6.2-.9L12 3Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M12 12.2a4.5 4.5 0 1 0-4.5-4.5 4.5 4.5 0 0 0 4.5 4.5Zm0 1.8c-4.2 0-7.5 2.4-7.5 5.4v1h15v-1c0-3-3.3-5.4-7.5-5.4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M7.2 3.8c.3-.7 1-1.1 1.8-1.1h2.2c.7 0 1.3.4 1.6 1l1 2.1c.3.7.1 1.5-.4 2L11.7 9a15 15 0 0 0 3.3 3.3l1.1-1.7c.5-.5 1.3-.7 2-.4l2.1 1c.6.3 1 .9 1 1.6v2.2c0 .8-.4 1.5-1.1 1.8-1 .4-2.3.6-3.9.3-2.9-.6-6.4-2.9-9.3-5.8S1.3 7.2.7 4.3C.4 2.7.6 1.4 1 0.4.3.7 1.2.3 2 .3h2.2c.7 0 1.3.4 1.6 1l1 2.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 2.5 20 6v5.6c0 5.2-3.4 9-8 10.9-4.6-1.9-8-5.7-8-10.9V6l8-3.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="m8.2 12.1 2.5 2.5 5.1-5.1" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-truck" viewBox="0 0 24 24">
+        <path d="M3 7h12v9H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M15 10h3.8l2.2 2.6V16h-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="7.5" cy="17.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="17.5" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-hardhat" viewBox="0 0 24 24">
+        <path d="M5 13a7 7 0 0 1 14 0v2H5v-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M7 15v3h10v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M12 6v7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-tools" viewBox="0 0 24 24">
+        <path d="M14.5 4.5a4.5 4.5 0 0 0 1 4.9l-7.8 7.8a2.2 2.2 0 1 0 3.1 3.1l7.8-7.8a4.5 4.5 0 0 0 4.9 1l-3.4-3.4-1.8-5.6-3.8-.1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M9 4 3 6.5v13l6-2.5 6 2.5 6-2.5v-13l-6 2.5L9 4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M9 4v13M15 6.5v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="M20 6 9.5 17 4 11.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </symbol>
+    </svg>
+
+    <div class="site-shell">
+      <div class="topbar">
+        <div class="container topbar__inner">
+          <div class="topbar__item">
+            <svg class="icon icon--tiny"><use href="#icon-pin"></use></svg>
+            <span>Proudly serving Kansas, Missouri &amp; surrounding areas</span>
+          </div>
+          <div class="topbar__item topbar__item--center">
+            <svg class="icon icon--tiny"><use href="#icon-star"></use></svg>
+            <span>Locally owned &amp; family operated since 1948</span>
+          </div>
+          <div class="topbar__links">
+            <a href="#contractor">Contractor Accounts</a>
+            <a href="#contact"><svg class="icon icon--tiny"><use href="#icon-user"></use></svg>Sign In</a>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container header__inner">
+          <a class="brand" href="#" aria-label="Trendel Lumber Co. home">
+            <span class="brand__mark" aria-hidden="true">
+              <img class="brand__logo" src="./logo_trendel.png" alt="" />
+            </span>
+            <span class="brand__text">
+              <strong>TRENDEL</strong>
+              <span>LUMBER CO.</span>
+              <small>EST. 1948</small>
+            </span>
+          </a>
+
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            <svg class="icon"><use href="#icon-menu"></use></svg>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <nav class="nav" id="primary-nav">
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#locations">Locations</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="header__actions">
+            <a class="phone-box" href="tel:8164832100">
+              <svg class="icon"><use href="#icon-phone"></use></svg>
+              <span>(816) 483-2100</span>
+            </a>
+            <button class="btn btn--solid" type="button" data-open-quote aria-haspopup="dialog" aria-controls="quote-modal" aria-expanded="false">Get A Quote</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero__visual hero__visual--photo" aria-hidden="true">
+            <img
+              class="hero__image"
+              src="./HeroBanner.png"
+              alt=""
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+
+          <div class="container hero__inner">
+            <div class="hero__copy" data-reveal>
+              <h1 class="hero__title">
+                <span>Built</span>
+                <span>Strong.</span>
+                <span class="accent">Delivered</span>
+                <span class="accent">Right.</span>
+              </h1>
+              <p class="hero__lede">
+                Top-quality materials.
+                <br />
+                Expert advice.
+                <br />
+                On-time. Every time.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--solid btn--large" href="#products">
+                  <svg class="icon"><use href="#icon-tools"></use></svg>
+                  Shop Products
+                </a>
+                <a class="btn btn--outline btn--large" href="#services">For Contractors</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-band">
+          <div class="container trust-band__inner">
+            <article class="trust-item" data-reveal>
+              <svg class="icon"><use href="#icon-shield"></use></svg>
+              <div>
+                <h2>Quality You Can Trust</h2>
+                <p>Premium materials from top brands.</p>
+              </div>
+            </article>
+            <article class="trust-item" data-reveal>
+              <svg class="icon"><use href="#icon-truck"></use></svg>
+              <div>
+                <h2>Delivery You Can Count On</h2>
+                <p>Fast, reliable delivery to your job site.</p>
+              </div>
+            </article>
+            <article class="trust-item" data-reveal>
+              <svg class="icon"><use href="#icon-hardhat"></use></svg>
+              <div>
+                <h2>Built For Pros &amp; DIYers</h2>
+                <p>Knowledgeable team. Solutions that build.</p>
+              </div>
+            </article>
+            <article class="trust-item" data-reveal>
+              <svg class="icon"><use href="#icon-user"></use></svg>
+              <div>
+                <h2>Local &amp; Family Owned</h2>
+                <p>Proudly serving our community for over 75 years.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="product-section" id="products">
+          <div class="container">
+            <h2 class="section-script" data-reveal>
+              <span>Everything You Need.</span>
+              <span class="section-script__accent">All In One Place.</span>
+            </h2>
+            <p class="section-kicker" data-reveal>
+              Whether you're framing a new home, remodeling a kitchen, building a deck, or managing a commercial project,
+              Trendel has the materials, tools, and expertise to keep your project moving forward.
+            </p>
+
+            <div class="products-grid">
+              <article class="product-card product-card--lumber product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./lumber-stack.jpg" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-tools"></use></svg>
+                  <h3>Lumber &amp; Framing</h3>
+                  <p>High-quality lumber for any size project.</p>
+                  <a href="#contact">Shop Lumber <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+              <article class="product-card product-card--panels product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./wood-stack.jpg" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-tools"></use></svg>
+                  <h3>Sheathing &amp; Panels</h3>
+                  <p>Durable panels for walls, roofs, and floors.</p>
+                  <a href="#contact">Shop Panels <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+              <article class="product-card product-card--doors product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./pexels-curtis-adams-1694007-6835088.jpg" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-map"></use></svg>
+                  <h3>Doors &amp; Windows</h3>
+                  <p>Stylish, energy-efficient options for any build.</p>
+                  <a href="#contact">Shop Doors &amp; Windows <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+              <article class="product-card product-card--decking product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./img_deck_sm.jpg" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-hardhat"></use></svg>
+                  <h3>Decking &amp; Railing</h3>
+                  <p>Everything you need for beautiful outdoor spaces.</p>
+                  <a href="#contact">Shop Decking <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+              <article class="product-card product-card--hardware product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./ChatGPT Image Jun 10, 2026, 05_38_42 PM.png" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-tools"></use></svg>
+                  <h3>Hardware &amp; Tools</h3>
+                  <p>The right tools and hardware to get the job done.</p>
+                  <a href="#contact">Shop Hardware <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+              <article class="product-card product-card--insulation product-card--photo">
+                <div class="product-card__media" aria-hidden="true">
+                  <img class="product-card__image" src="./pexels-thirdman-8469938.jpg" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="product-card__body">
+                  <svg class="icon icon--card"><use href="#icon-shield"></use></svg>
+                  <h3>Insulation &amp; Drywall</h3>
+                  <p>Comfort, efficiency, and performance you can count on.</p>
+                  <a href="#contact">Shop Insulation <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="split-band" id="services">
+          <div class="container split-band__inner">
+            <article class="promo-card promo-card--team" id="contractor" data-reveal>
+              <div class="promo-card__copy">
+                <h2 class="section-brush">Your Project. Our Priority.</h2>
+                <p>
+                  From the first board to the final detail, we're here to help you build it right.
+                </p>
+                <a class="btn btn--solid" href="#about">Meet Our Team</a>
+              </div>
+              <div class="promo-card__art promo-card__art--team" aria-hidden="true">
+                <img
+                  class="promo-card__image"
+                  src="./ChatGPT Image Jun 10, 2026, 05_38_22 PM.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="promo-card promo-card--delivery" data-reveal>
+              <div class="promo-card__copy">
+                <h2 class="section-brush">Delivery That Keeps You Moving.</h2>
+                <ul class="check-list">
+                  <li><svg class="icon"><use href="#icon-check"></use></svg>On-time job site delivery</li>
+                  <li><svg class="icon"><use href="#icon-check"></use></svg>Local and regional coverage</li>
+                  <li><svg class="icon"><use href="#icon-check"></use></svg>Professional &amp; friendly drivers</li>
+                  <li><svg class="icon"><use href="#icon-check"></use></svg>Forklift unloads &amp; staging available</li>
+                </ul>
+                <a class="btn btn--light" href="#contact">Schedule Delivery <svg class="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+              </div>
+              <div class="promo-card__art promo-card__art--truck" aria-hidden="true">
+                <img
+                  class="promo-card__image"
+                  src="./ChatGPT Image Jun 10, 2026, 12_19_59 PM.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="locations-band" id="locations">
+          <div class="container locations-band__inner">
+            <div class="locations-panel">
+              <h2 class="section-script section-script--dark" data-reveal>
+                <span>Three Locations.</span>
+                <span class="section-script__accent">One Commitment To You.</span>
+              </h2>
+              <div class="locations-grid">
+                <article class="location-card" data-reveal>
+                  <div class="location-card__image" aria-hidden="true"><span>Image placeholder</span></div>
+                  <div class="location-card__body">
+                    <h3>Kansas City, MO</h3>
+                    <p>5201 Chouteau Traffic Way</p>
+                    <p>Kansas City, MO 64117</p>
+                    <a href="tel:8164832100"><svg class="icon"><use href="#icon-pin"></use></svg>(816) 483-2100</a>
+                  </div>
+                </article>
+                <article class="location-card" data-reveal>
+                  <div class="location-card__image" aria-hidden="true"><span>Image placeholder</span></div>
+                  <div class="location-card__body">
+                    <h3>Independence, MO</h3>
+                    <p>1800 S. Noland Rd.</p>
+                    <p>Independence, MO 64055</p>
+                    <a href="tel:8162525200"><svg class="icon"><use href="#icon-pin"></use></svg>(816) 252-5200</a>
+                  </div>
+                </article>
+                <article class="location-card" data-reveal>
+                  <div class="location-card__image" aria-hidden="true"><span>Image placeholder</span></div>
+                  <div class="location-card__body">
+                    <h3>Blue Springs, MO</h3>
+                    <p>1615 SW Missouri E</p>
+                    <p>Blue Springs, MO 64014</p>
+                    <a href="tel:8162294240"><svg class="icon"><use href="#icon-pin"></use></svg>(816) 229-4240</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <aside class="testimonial" data-reveal>
+              <svg class="testimonial__quote" viewBox="0 0 36 36" aria-hidden="true">
+                <path d="M13 12c-3 1-4 3-4 6h4v6H5v-6c0-7 4-11 10-12v6Zm18 0c-3 1-4 3-4 6h4v6h-8v-6c0-7 4-11 10-12v6Z" fill="currentColor"/>
+              </svg>
+              <p>
+                Trendel Lumber has been our go-to supplier for years. Great products, fair prices,
+                and a team that always goes the extra mile.
+              </p>
+              <span class="testimonial__name">- Mike R.</span>
+              <span class="testimonial__role">General Contractor</span>
+              <div class="stars" aria-label="Five star rating">
+                <svg class="icon"><use href="#icon-star"></use></svg>
+                <svg class="icon"><use href="#icon-star"></use></svg>
+                <svg class="icon"><use href="#icon-star"></use></svg>
+                <svg class="icon"><use href="#icon-star"></use></svg>
+                <svg class="icon"><use href="#icon-star"></use></svg>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="stats-band">
+          <div class="container stats-band__inner">
+            <div class="stats">
+              <article class="stat" data-reveal>
+                <strong>75+</strong>
+                <span>Years In Business</span>
+              </article>
+              <article class="stat" data-reveal>
+                <strong>10k+</strong>
+                <span>Products In Stock</span>
+              </article>
+              <article class="stat" data-reveal>
+                <strong>1000+</strong>
+                <span>Pros Served</span>
+              </article>
+              <article class="stat" data-reveal>
+                <strong>Unmatched</strong>
+                <span>Customer Service</span>
+              </article>
+            </div>
+            <form class="signup" id="resources" data-reveal>
+              <div>
+                <h2>Stay In The Know</h2>
+                <p>Get deals, tips, and product updates delivered straight to your inbox.</p>
+              </div>
+              <div class="signup__controls">
+                <label class="sr-only" for="email">Email Address</label>
+                <input id="email" type="email" placeholder="Email Address" />
+                <button type="button" class="btn btn--dark">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="about">
+          <div class="container footer__inner">
+          <div class="footer__brand" data-reveal>
+            <a class="brand brand--footer" href="#">
+              <span class="brand__mark" aria-hidden="true">
+                <img class="brand__logo" src="./logo_trendel.png" alt="" />
+              </span>
+              <span class="brand__text">
+                <strong>TRENDEL</strong>
+                <span>LUMBER CO.</span>
+                <small>EST. 1948</small>
+              </span>
+            </a>
+            <p>Backed by experience, built on trust, and ready for the next job.</p>
+            <div class="socials" aria-label="Social links">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">ig</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="YouTube">yt</a>
+            </div>
+            <figure class="owner-card" aria-label="Owner Kyle">
+              <img class="owner-card__image" src="./ChatGPT Image Jun 10, 2026, 05_38_22 PM.png" alt="Kyle, owner of Trendel Lumber Co." loading="lazy" decoding="async" />
+              <figcaption class="owner-card__caption">
+                <span class="owner-card__eyebrow">Owner</span>
+                <strong>Kyle</strong>
+                <p>Leading the family business with a hands-on approach and a builder's eye.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="footer__links" data-reveal>
+            <div>
+              <h3>Shop</h3>
+              <a href="#products">Lumber &amp; Framing</a>
+              <a href="#products">Sheathing &amp; Panels</a>
+              <a href="#products">Doors &amp; Windows</a>
+              <a href="#products">Decking &amp; Railing</a>
+              <a href="#products">Hardware &amp; Tools</a>
+            </div>
+            <div>
+              <h3>Services</h3>
+              <a href="#services">Delivery</a>
+              <a href="#services">Material Takeoffs</a>
+              <a href="#services">Custom Orders</a>
+              <a href="#services">Job Site Support</a>
+              <a href="#services">Contractor Accounts</a>
+            </div>
+            <div>
+              <h3>Company</h3>
+              <a href="#about">About Us</a>
+              <a href="#resources">Careers</a>
+              <a href="#resources">News</a>
+              <a href="#resources">Resources</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer__contact" id="contact" data-reveal>
+            <div class="footer__contact-media" aria-hidden="true">
+              <img class="footer__contact-image" src="./img_contact_us.jpg" alt="" loading="lazy" decoding="async" />
+            </div>
+            <h3>Let's Build Together</h3>
+            <p>Trendel Lumber Co.</p>
+            <p>1516 S Main St</p>
+            <p>Ottawa, KS 66067</p>
+            <p>Located on the west side near the intersection of 15th &amp; Main Street</p>
+            <a href="tel:7852428144"><svg class="icon"><use href="#icon-phone"></use></svg>(785) 242-8144</a>
+            <p>Fax: (785) 242-8177</p>
+            <p>Hours: Mon-Fri 7:30 AM-5 PM</p>
+            <p>Saturday: Closed</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="quote-modal" id="quote-modal" hidden aria-hidden="true">
+      <div class="quote-modal__backdrop" data-quote-close></div>
+      <div
+        class="quote-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="quote-modal-title"
+      >
+        <button class="quote-modal__close" type="button" data-quote-close aria-label="Close quote form">
+          <svg class="icon"><use href="#icon-x"></use></svg>
+        </button>
+        <p class="quote-modal__eyebrow">Trendel Lumber Co.</p>
+        <h2 id="quote-modal-title">Request A Quote</h2>
+        <p class="quote-modal__lead">
+          Tell us what you need and our team will follow up with pricing and next steps.
+        </p>
+        <form class="contact-form" id="contact-form">
+          <div class="contact-form__grid">
+            <label class="contact-form__field">
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label class="contact-form__field">
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label class="contact-form__field">
+              <span>Phone</span>
+              <input name="phone" type="tel" autocomplete="tel" />
+            </label>
+            <label class="contact-form__field">
+              <span>Company</span>
+              <input name="company" type="text" autocomplete="organization" />
+            </label>
+            <label class="contact-form__field contact-form__field--full">
+              <span>Subject</span>
+              <input name="subject" type="text" required />
+            </label>
+            <label class="contact-form__field contact-form__field--full">
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+          </div>
+          <button class="btn btn--solid contact-form__submit" type="submit">Send Message</button>
+          <p class="contact-form__status" data-contact-status aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
