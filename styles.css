@@ -477,10 +477,9 @@ input {
   max-width: 20rem;
   color: rgba(255, 255, 255, 0.94);
   text-shadow: 0 8px 18px rgba(0, 0, 0, 0.46);
-  animation:
-    heroLedeSmash 900ms cubic-bezier(0.18, 0.82, 0.2, 1) 520ms both,
-    heroLedeRumble 6.2s steps(2, end) 1550ms infinite;
-  will-change: transform, opacity;
+  animation: none;
+  transform: none;
+  will-change: auto;
 }
 
 .hero__actions {
